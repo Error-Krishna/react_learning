@@ -1,0 +1,33 @@
+{
+  "name": "react_learning",
+  "version": "1.0.0",
+  "description": "Learning react from scratch, course by akshay saini, utilized by Krishna Goyal",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Error-Krishna/reach_learning.git"
+  },
+  "keywords": [
+    "Krishna",
+    "Goyal",
+    "react",
+    "krishna",
+    "goyal",
+    "akshay",
+    "saini",
+    "akshay",
+    "saini"
+  ],
+  "author": "Krishna Goyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Error-Krishna/reach_learning/issues"
+  },
+  "homepage": "https://github.com/Error-Krishna/reach_learning#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
