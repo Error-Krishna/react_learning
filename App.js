@@ -1,9 +1,5 @@
-// const heading = React.createElement(
-//     "h1", 
-//     { id: "heading", xyz: "abc" }, // property
-//     "Hello from React!"); // children
-
-// console.log(heading); // an object not a tag
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 
 

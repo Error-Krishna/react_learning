@@ -2,7 +2,6 @@
   "name": "react_learning",
   "version": "1.0.0",
   "description": "Learning react from scratch, course by akshay saini, utilized by Krishna Goyal",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
@@ -29,5 +28,12 @@
   "homepage": "https://github.com/Error-Krishna/reach_learning#readme",
   "devDependencies": {
     "parcel": "^2.16.4"
-  }
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ] 
 }

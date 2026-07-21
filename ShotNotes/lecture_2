@@ -1,0 +1,6 @@
+- it require many other package and libraries to make an optimized app ITS NOT JUST REACT
+- npm - help in manageing node packages (npm doesnot stand for node package manager)
+- package.json - takes care of version of dependencies a record of dependncies are installed
+- Remove main:"App.js" before production because npm automatically generates it automatically while production
+- ./dist - contains production based files and codes
+- 
