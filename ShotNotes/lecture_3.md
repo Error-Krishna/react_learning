@@ -1,0 +1,5 @@
+- scripts in package help in storing build and start command in shorter versions like npm start, npm run build etc
+- JSX is html like syntax
+- JSX and HTML React JS all are different
+- WE WRITE CODE FOR HUMAN NOT FOR MACHINE
+- const JSXHeading = <h1 id="heading"> Namaste react from JSX</h1>; this is not pure js

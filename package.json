@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Learning react from scratch, course by akshay saini, utilized by Krishna Goyal",
   "scripts": {
+    "start": " parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
