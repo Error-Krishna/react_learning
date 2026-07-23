@@ -1,0 +1,122 @@
+[
+  {
+    "resName": "Meghana Foods",
+    "cuisine": "Biryani, North Indian",
+    "rating": "4.5",
+    "time": "35 mins",
+    "price": "350 ",
+    "deliveryFee": "Free Delivery",
+    "offer": "40% OFF up to 80",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fyO3nveZHLkFsO8vJoRzUTAsxC6nWDuwqERcBVpFjQ&s=10"
+  },
+  {
+    "resName": "KFC",
+    "cuisine": "Burger, Fast Food",
+    "rating": "4.3",
+    "time": "25 mins",
+    "price": "500 ",
+    "deliveryFee": "29 Delivery",
+    "offer": "Free Chicken Popcorn on 499+",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800"
+  },
+  {
+    "resName": "Domino's Pizza",
+    "cuisine": "Pizza, Italian",
+    "rating": "4.4",
+    "time": "30 mins",
+    "price": "600 ",
+    "deliveryFee": "Free Delivery",
+    "offer": "Buy 1 Get 1 Pizza",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800"
+  },
+  {
+    "resName": "Sushi World",
+    "cuisine": "Japanese, Sushi",
+    "rating": "4.7",
+    "time": "40 mins",
+    "price": "900 ",
+    "deliveryFee": "49 Delivery",
+    "offer": "20% OFF above 799",
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800"
+  },
+  {
+    "resName": "Taco Bell",
+    "cuisine": "Mexican, Wraps",
+    "rating": "4.2",
+    "time": "28 mins",
+    "price": "450 ",
+    "deliveryFee": "25 Delivery",
+    "offer": "Flat 125 OFF",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdM0wY6m_ntu4f5RA0A7Zll38api7glY7o4OhGJlJEew&s=10"
+  },
+  {
+    "resName": "The Wok House",
+    "cuisine": "Chinese, Noodles",
+    "rating": "4.6",
+    "time": "32 mins",
+    "price": "550 ",
+    "deliveryFee": "Free Delivery",
+    "offer": "30% OFF up to 100",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800"
+  },
+  {
+    "resName": "Cake Factory",
+    "cuisine": "Desserts, Bakery",
+    "rating": "4.8",
+    "time": "20 mins",
+    "price": "400 ",
+    "deliveryFee": "19 Delivery",
+    "offer": "Free Dessert on 399+",
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+  },
+  {
+    "resName": "South Spice",
+    "cuisine": "South Indian, Dosa",
+    "rating": "4.5",
+    "time": "22 mins",
+    "price": "300 ",
+    "deliveryFee": "Free Delivery",
+    "offer": "25% OFF up to 75",
+    "image": "https://images.unsplash.com/photo-1630383249896-424e482df921?w=800"
+  },
+  {
+  "resName": "Burger King",
+  "cuisine": "Burgers, American",
+  "rating": "4.4",
+  "time": "27 mins",
+  "price": "450 ",
+  "deliveryFee": "Free Delivery",
+  "offer": "50% OFF up to 100",
+  "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800"
+  },
+  {
+  "resName": "Subway",
+  "cuisine": "Healthy, Sandwiches",
+  "rating": "4.3",
+  "time": "24 mins",
+  "price": "380 ",
+  "deliveryFee": "19 Delivery",
+  "offer": "Free Cookie on 299+",
+  "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=800"
+  },
+  {
+  "resName": "Baskin Robbins",
+  "cuisine": "Ice Cream, Desserts",
+  "rating": "4.7",
+  "time": "18 mins",
+  "price": "350 ",
+  "deliveryFee": "Free Delivery",
+  "offer": "Buy 2 Scoops Get 1 Free",
+  "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800"
+  },
+  {
+  "resName": "Starbucks",
+  "cuisine": "Coffee, Beverages",
+  "rating": "4.6",
+  "time": "20 mins",
+  "price": "700 ",
+  "deliveryFee": "39 Delivery",
+  "offer": "20% OFF on Coffee Combos",
+  "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800"
+  }
+]

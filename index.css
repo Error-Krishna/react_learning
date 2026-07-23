@@ -1,3 +1,5 @@
+/* ===================== RESET ===================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +8,10 @@
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #fff8f0;
+    background: #fff8f2;
 }
 
-/* ---------------- Header ---------------- */
+/* ===================== HEADER ===================== */
 
 .header {
     position: sticky;
@@ -23,66 +25,138 @@ body {
     padding: 0 60px;
     height: 85px;
 
-    background: #ffc107;
+    background: #ff6b35; /* Solid modern orange */
 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.25);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
 .logo {
-    width: 75px;
+    width: 70px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .logo:hover {
-    transform: scale(1.08);
+    transform: scale(1.08) rotate(-6deg);
 }
 
-/* ---------------- Navigation ---------------- */
+.brand h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.brand span {
+    display: block;
+    margin-top: 2px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* ===================== NAVIGATION ===================== */
 
 .nav-items ul {
     display: flex;
+    align-items: center;
+    gap: 30px;
     list-style: none;
-    gap: 35px;
 }
 
 .nav-items li {
     position: relative;
     cursor: pointer;
-    font-size: 17px;
+
+    font-size: 16px;
     font-weight: 600;
-    color: #3e2723;
-    transition: color 0.3s ease;
+    color: white;
+
+    transition: all 0.3s ease;
+}
+
+.nav-items li:hover {
+    color: #ffe6d8;
 }
 
 .nav-items li::after {
     content: "";
     position: absolute;
+
+    left: 50%;
     bottom: -6px;
-    left: 0;
+
     width: 0;
     height: 3px;
-    background: #ff6b35;
-    border-radius: 20px;
-    transition: width 0.3s ease;
-}
 
-.nav-items li:hover {
-    color: #ff6b35;
+    background: white;
+
+    border-radius: 20px;
+
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
 }
 
 .nav-items li:hover::after {
     width: 100%;
 }
 
-/* ---------------- Body ---------------- */
+/* ===================== CART ===================== */
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    background: white;
+    color: #ff6b35;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+    transform: translateY(-2px);
+    background: #fff4ef;
+}
+
+.cart-btn span {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ff6b35;
+    color: white;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ===================== BODY ===================== */
 
 .body {
     min-height: 100vh;
-    background: #fff8f0;
+    background: #fff8f2;
 }
 
-/* ---------------- Search ---------------- */
+/* ===================== SEARCH ===================== */
 
 .search {
     display: flex;
@@ -96,7 +170,7 @@ body {
 
     padding: 15px 22px;
 
-    border: none;
+    border: 1px solid #ececec;
     border-radius: 40px;
 
     background: white;
@@ -105,16 +179,17 @@ body {
 
     outline: none;
 
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 
     transition: all 0.3s ease;
 }
 
 .search input:focus {
-    box-shadow: 0 10px 28px rgba(255, 107, 53, 0.25);
+    border-color: #ff6b35;
+    box-shadow: 0 10px 28px rgba(255, 107, 53, 0.18);
 }
 
-/* ---------------- Restaurant Cards ---------------- */
+/* ===================== RESTAURANT CARDS ===================== */
 
 .res-container {
     display: flex;
@@ -137,19 +212,23 @@ body {
 
     padding: 14px;
 
-    border: 1px solid #f3e5ab;
+    border: 1px solid #f0e4de;
 
     cursor: pointer;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
 
     transition: all 0.3s ease;
 }
 
 .res-card:hover {
-    transform: translateY(-8px) scale(1.02);
+    transform: translateY(-8px);
 
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 18px 40px rgba(255, 107, 53, 0.18);
 }
 
 .res-logo {
@@ -169,37 +248,70 @@ body {
 
 .res-card h3 {
     margin-top: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
     font-size: 22px;
     font-weight: 700;
 
-    color: #1f2937;
+    color: #222;
 }
 
 .res-card h4 {
-    margin: 8px 0;
+    margin: 0;
 
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
 
     color: #6b7280;
 }
 
-/* ---------------- Responsive ---------------- */
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #4b5563;
+}
+
+.offer {
+    margin-top: 6px;
+
+    padding: 8px 10px;
+
+    background: #fff0ea;
+    color: #ff6b35;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* ===================== RESPONSIVE ===================== */
 
 @media (max-width: 768px) {
     .header {
-        padding: 0 20px;
-    }
-
-    .nav-items ul {
-        gap: 18px;
-        font-size: 14px;
+        padding: 15px 20px;
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .logo {
         width: 60px;
+    }
+
+    .brand h2 {
+        font-size: 22px;
+    }
+
+    .nav-items ul {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .search input {
