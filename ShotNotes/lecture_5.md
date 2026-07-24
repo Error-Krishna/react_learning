@@ -14,5 +14,5 @@
 
 - react hooks - normal js function 
 
-    - useState(): superpowerful state
+    - useState(): superpowerful state. whenever the state varaible changes the react will re-render the component
     - useEffect
