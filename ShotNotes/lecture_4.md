@@ -2,5 +2,3 @@
 - covered propr
 - config driven UI
 - prop drilling
-
-

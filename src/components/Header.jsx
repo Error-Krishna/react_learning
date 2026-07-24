@@ -1,4 +1,4 @@
-import LOGO_URL from "../utils/constants.js";
+import { LOGO_URL } from "../utils/constants.js";
 
 
 
@@ -8,7 +8,7 @@ const Header = () => {
             <div className="logo-container">
                 <img
                     className="logo"
-                    src="https://png.pngtree.com/png-vector/20221218/ourmid/pngtree-simple-and-modern-food-logo-vector-design-png-image_6527848.png"
+                    src={LOGO_URL}
                     alt="Food Logo"
                 />
             </div>
