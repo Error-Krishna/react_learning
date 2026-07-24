@@ -1,4 +1,4 @@
-[
+const resList = [
   {
     "resName": "Meghana Foods",
     "cuisine": "Biryani, North Indian",
@@ -120,3 +120,5 @@
   "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800"
   }
 ]
+
+export default resList;

@@ -3,3 +3,5 @@
 - JSX and HTML React JS all are different
 - WE WRITE CODE FOR HUMAN NOT FOR MACHINE
 - const JSXHeading = <h1 id="heading"> Namaste react from JSX</h1>; this is not pure js
+
+
