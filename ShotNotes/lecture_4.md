@@ -1,0 +1,4 @@
+- food adering app UI building
+- covered propr
+- config driven UI
+- prop drilling
