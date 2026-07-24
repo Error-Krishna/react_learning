@@ -10,3 +10,9 @@
 
 - folder strucutures
 - naming conventions
+
+
+- react hooks - normal js function 
+
+    - useState(): superpowerful state
+    - useEffect

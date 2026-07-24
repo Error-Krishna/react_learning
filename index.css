@@ -188,7 +188,42 @@ body {
     border-color: #f59e0b;
     box-shadow: 0 8px 22px rgba(245, 158, 11, 0.18);
 }
+/* ===================== FILTER BUTTON ===================== */
 
+.filter {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+    margin-left: 10px;
+    background: #f59e0b;
+    color: white;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #d97706;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(245, 158, 11, 0.35);
+}
+
+.filter-btn:active {
+    transform: scale(0.97);
+}
 /* ===================== RESTAURANT CARDS ===================== */
 
 .res-container {
