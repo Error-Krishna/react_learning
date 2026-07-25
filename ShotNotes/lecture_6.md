@@ -1,0 +1,3 @@
+# Architecture
+    - monolith
+    - micro service
