@@ -10,6 +10,8 @@ const Body = () => {
     const [listOfRestaurants, setListOfRestaurants] = useState([]);
     const [allRestaurants, setAllRestaurants] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [searchText, setSearchText] = useState("");
+    console.log("Body Rendered");
 
     useEffect(() => {
         const fetchData = async () => {
@@ -51,8 +53,56 @@ const Body = () => {
     }
 
     return (
-        <div className="body">
+        <div className="body"> 
             <div className="filter">
+                <div className="search">
+                    <input type="text" 
+                        className="search-box" 
+                        value={searchText} 
+                        placeholder="Search here..."
+                        onChange={(e)=>{
+                            const text = e.target.value;
+                            setSearchText(text);
+
+                            if (text.trim() === "") {
+                                setListOfRestaurants(allRestaurants);
+                                return;
+                            }
+
+                            const searchedRes = allRestaurants.filter((res) => {
+                                const query = text.toLowerCase();
+                                const info = res.info;
+
+                                return (
+                                    info?.name?.toLowerCase().includes(query) ||
+                                    info?.cuisines?.some((cuisine) =>
+                                        cuisine.toLowerCase().includes(query)
+                                    ) ||
+                                    info?.areaName?.toLowerCase().includes(query) ||
+                                    info?.locality?.toLowerCase().includes(query) ||
+                                    info?.costForTwo?.toLowerCase().includes(query) ||
+                                    info?.avgRating?.toString().includes(query)
+                                );
+                            });
+
+                            setListOfRestaurants(searchedRes);
+                        }}
+                        
+                    />
+                    {/* <button
+                        onClick={() => {
+                            if (searchText.trim() === "") {
+                                setListOfRestaurants(allRestaurants);
+                                return;
+                            }
+                            const searchedRes = allRestaurants.filter((res) =>res.info?.name?.toLowerCase().includes(searchText.toLowerCase()));
+                            console.log(searchedRes);
+                            setListOfRestaurants(searchedRes);
+                        }}
+                    >
+                        Search
+                    </button> */}
+                 </div>
                 <button
                     className="filter-btn"
                     onClick={() => {
