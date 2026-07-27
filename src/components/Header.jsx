@@ -12,12 +12,15 @@ const Header = () => {
 
     return (
         <div className="header">
-            <div className="logo-container">
-                <img
-                    className="logo"
-                    src={LOGO_URL}
-                    alt="Food Logo"
-                />
+            <div className="logo-container" >
+                <Link className="nav-link" to="/">
+                    <img
+                        className="logo"
+                        src={LOGO_URL}
+                        alt="Food Logo"
+                    />
+                </Link>
+                
             </div>
 
             <div className="nav-items">
