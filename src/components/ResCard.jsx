@@ -1,5 +1,7 @@
 const CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/";
+const FALLBACK_IMAGE =
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&fit=crop&q=80";
 
 const ResCard = ({ resdata }) => {
     const {
@@ -16,12 +18,12 @@ const ResCard = ({ resdata }) => {
         <div className="res-card">
             <img
                 className="res-logo"
-                src={CDN_URL + cloudinaryImageId}
+                src={cloudinaryImageId ? CDN_URL + cloudinaryImageId : FALLBACK_IMAGE}
                 alt={name}
             />
 
             <h3>{name}</h3>
-            <h4>🍽️ {cuisines.join(", ")}</h4>
+            <h4>🍽️ {cuisines?.join(", ") || "Popular cuisines"}</h4>
 
             <div className="card-info">
                 <span>⭐ {avgRating}</span>

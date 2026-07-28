@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router";
 import ResCard from "./ResCard.jsx";
 import { SWIGGY_API } from "../utils/constants.js";
 import Shimmer from "./Shimmer";
@@ -118,7 +119,14 @@ const Restaurant = () => {
 
             <div className="res-container">
                 {listOfRestaurants.map(({ info }) => (
-                    <ResCard key={info.id} resdata={info} />
+                    <Link
+                        key={info.id}
+                        className="res-card-link"
+                        to={`/restaurant/${info.id}`}
+                        state={{ restaurant: info }}
+                    >
+                        <ResCard resdata={info} />
+                    </Link>
                 ))}
             </div>
         </div>
