@@ -1,3 +1,5 @@
+import User from "./User"
+import UserClass from "./UserClass";
 const About = () => {
     return (
         <section className="page-shell">
@@ -34,9 +36,13 @@ const About = () => {
                         feel familiar from page to page.
                     </p>
                 </article>
+                <UserClass name={"Krishna Goyal"} location={"kolkata"}/>
             </div>
         </section>
+        
     );
 };
 
 export default About;
+
+

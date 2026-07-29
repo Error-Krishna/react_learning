@@ -1415,3 +1415,37 @@ body {
         background-position: 200% 0;
     }
 }
+
+/* ===================== USER CARD ===================== */
+
+.user-card {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 28px;
+
+    background: white;
+    border: 1px solid #f0e4de;
+    border-radius: 20px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(245, 158, 11, 0.18);
+}
+
+.user-card h2 {
+    margin-bottom: 18px;
+    color: #1f2937;
+    font-size: 28px;
+}
+
+.user-card h3 {
+    margin: 12px 0;
+    color: #6b7280;
+    font-size: 18px;
+    font-weight: 500;
+}
