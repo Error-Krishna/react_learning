@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
-import ResCard from "./ResCard.jsx";
+import ResCard, { withPromotedLabel } from "./ResCard.jsx";
 import { SWIGGY_API } from "../utils/constants.js";
 import Shimmer from "./Shimmer";
 
@@ -11,6 +11,7 @@ const Restaurant = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchText, setSearchText] = useState("");
+  const RestaurantCardPromoted = withPromotedLabel(ResCard);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,13 +21,14 @@ const Restaurant = () => {
           throw new Error(`HTTP Error ${response.status}`);
         }
         const json = await response.json();
+        console.log("Fetched data:", json);
         const restaurants =
           json?.data?.cards
             ?.find(
               (card) => card?.card?.card?.gridElements?.infoWithStyle?.restaurants
             )
             ?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-
+        console.log("Extracted restaurants:", restaurants); 
         setListOfRestaurants(restaurants);
         setAllRestaurants(restaurants);
       } catch (error) {
@@ -124,7 +126,11 @@ const Restaurant = () => {
             to={`/restaurant/${info.id}`}
             state={{ restaurant: info }}
           >
-            <ResCard resdata={info} />
+            {info.isOpen? (
+              <RestaurantCardPromoted resdata={info} />
+            ) : (
+              <ResCard resdata={info} />
+            )}
           </Link>
         ))}
       </div>

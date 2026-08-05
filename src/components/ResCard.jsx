@@ -42,4 +42,30 @@ const ResCard = ({ resdata }) => {
   );
 };
 
+
+
+export const withPromotedLabel = (ResCard) => {
+  return (props) => {
+    return(
+    <div className="relative inline-block group">
+      <label
+        className="
+          absolute top-2 left-2 z-10
+          bg-orange-400 text-white font-bold
+          py-1 px-3 rounded-full shadow-md
+          transition-all duration-300
+          group-hover:-translate-y-2
+          group-hover:shadow-lg
+          hover:bg-orange-600
+        "
+      >
+        Opened Now
+      </label>
+      <ResCard {...props} />
+    </div>);
+  };
+};
 export default ResCard;
+
+
+
