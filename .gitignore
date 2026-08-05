@@ -7,3 +7,5 @@ Media/
 
 .parcel-cache
 dist
+
+.env
