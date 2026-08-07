@@ -692,7 +692,6 @@ Unmounting
 componentWillUnmount()
 ```
 
----
 
 # Quick Revision
 
